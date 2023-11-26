@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 #yyyy
 #yoonsunju babo
+=======
+
+>>>>>>> e55952755fc8b4d64af65baf4fb6c8ec0a09adb4
 #include "led.h"
 #include <fcntl.h>
 #include <unistd.h>
