@@ -1,8 +1,8 @@
 
-#include<stdio.h>
+
 #include "led.h"
 #include <fcntl.h>
-#include <unistd.h>
+
 static unsigned int ledValue = 0;
 static int fd = 0;
 int ledOnOff (int ledNum, int onOff)
