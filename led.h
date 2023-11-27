@@ -7,4 +7,4 @@ int ledStatus (void);
 int ledLibExit(void);
 #define LED_DRIVER_NAME "/dev/periled"
 
-#endif 
+#endif _LED_H_
