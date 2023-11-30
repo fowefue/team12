@@ -11,6 +11,7 @@
 #define LED_DRIVER_NAME "/dev/periled"
 
 int main(){
+printf("start\n");
     ledLibInit();
     sleep(3);
 
