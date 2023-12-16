@@ -27,9 +27,14 @@ BUTTON_MSG_T send;
 int probeButtonPath(char *newPath){
     int returnValue = 0;
     int number = 0;
+<<<<<<< HEAD
 
     FILE* fp = fopen(PROBE_FILE,"rt");
     
+=======
+    FILE* fp = fopen(PROBE_FILE,"rt");
+
+>>>>>>> 720fb7ac5e9a400d191b5c364d4f2a7176a714c2
     while(!feof(fp)) //끝까지 읽어들인다.
     {
         char tmpStr[200]; //200자를 읽을 수 있게 버퍼
@@ -40,6 +45,10 @@ int probeButtonPath(char *newPath){
             printf("YES! I found!: %s\r\n", tmpStr);
             returnValue = 1; //찾음
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 720fb7ac5e9a400d191b5c364d4f2a7176a714c2
         if (
             (returnValue == 1) && //찾은 상태에서
             (strncasecmp(tmpStr, HAVE_TO_FIND_2,
@@ -50,7 +59,11 @@ int probeButtonPath(char *newPath){
         printf("\t%c\r\n",tmpStr[strlen(tmpStr)-3]);
         number = tmpStr[strlen(tmpStr)-3] - '0';
         //Ascii character '0'-'9' (0x30-0x39)
+<<<<<<< HEAD
         //to interger(0)
+=======
+       //to interger(0)
+>>>>>>> 720fb7ac5e9a400d191b5c364d4f2a7176a714c2
         break;
         }
     }
@@ -106,7 +119,11 @@ void* buttonThFunc(void*arg){
                 send.pressed=2;
                 msgsnd(msgID, &send.pressed,sizeof(send.pressed),0);
                 } //End of if
+<<<<<<< HEAD
         }
+=======
+       }
+>>>>>>> 720fb7ac5e9a400d191b5c364d4f2a7176a714c2
         else // EV_SYN
         ; // do notthing
     } // End of While
